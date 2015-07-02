@@ -25,7 +25,7 @@ Check out the [example](http://mhkeller.github.io/cartob-embeds).
 
 ## Future features
 
-Check this Issue Tracker for progress. A few ideas are:
+Check the Issue Tracker for progress. A few ideas are:
 
 * Mobile latlng
 * Mobile zoom
