@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<title>CartoDB Embeds</title>
+
+	<style>
+		body{
+			margin: 0;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="ajmint-cartodb-embed" data-embed-link="https://aljazeeraamerica.cartodb.com/u/ajammultimedia/api/v2/viz/a94a2fbc-f990-11e4-b53c-0e5e07bb5d8a/viz.json" style="width: 100%; height: 500px;"></div>
+	
+	<div class="ajmint-cartodb-embed" data-embed-link="https://aljazeeraamerica.cartodb.com/u/ajammultimedia/api/v2/viz/a94a2fbc-f990-11e4-b53c-0e5e07bb5d8a/viz.json" data-zoom="14" style="width: 100%; height: 500px;"></div>
+
+	<div class="ajmint-cartodb-embed" data-embed-link="https://aljazeeraamerica.cartodb.com/u/ajammultimedia/api/v2/viz/a94a2fbc-f990-11e4-b53c-0e5e07bb5d8a/viz.json" data-latlng="33.9436333,-118.4906967" data-zoom="9" style="width: 100%; height: 500px;"></div>
+
+	<!-- Load another version to simulate what the CMS will do -->
+	<script src="../jquery-1.11.1.min.js"></script>
+
+	<!-- Load our version of jQuery, 1.7.2, which is what cartodb.js 3.15.2 -->
+	<script src="../bower_components/jquery/jquery.min.js"></script>
+	<script src="../bower_components/cartodb.js/dist/cartodb.js"></script>
+	<script src="../cartodb.embeds.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "cartodb-embeds",
+  "version": "0.0.1",
+  "description": "More flexible embeds for CartoDB.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mhkeller/cartodb-embeds"
+  },
+  "keywords": [
+    "cartodb",
+    "map",
+    "embed",
+    "visualization"
+  ],
+  "author": "Michael Keller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhkeller/cartodb-embeds/issues"
+  },
+  "homepage": "https://github.com/mhkeller/cartodb-embeds"
+}

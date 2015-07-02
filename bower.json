@@ -1,0 +1,22 @@
+{
+  "name": "cartodb-embeds",
+  "version": "0.0.1",
+  "authors": [
+    "mhkeller <michael.keller@gmail.com>"
+  ],
+  "description": "More flexible embeds for CartoDB.js",
+  "main": "cartodb.embeds.js",
+  "keywords": [
+    "cartodb",
+    "maps",
+    "embed",
+    "visualization"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
