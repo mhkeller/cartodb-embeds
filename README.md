@@ -13,13 +13,13 @@ Check out the [example](http://mhkeller.github.io/cartodb-embeds/examples/index.
 <script src="cartodb.embeds.js"></script>
 
 <!-- Vanilla embed, latlng and zoom are as described in viz -->
-<div class="ajmint-cartodb-embed" data-embed-link="link-goes-here" style="width: 100%; height: 500px;"></div>
+<div class="CDBE-map" data-embed-link="link-goes-here" style="width: 100%; height: 500px;"></div>
 	
 <!-- Custom zoom -->
-<div class="ajmint-cartodb-embed" data-embed-link="link-goes-here" data-zoom="14" style="width: 100%; height: 500px;"></div>
+<div class="CDBE-map" data-embed-link="link-goes-here" data-zoom="14" style="width: 100%; height: 500px;"></div>
 
 <!-- Custom latlng and zoom -->
-<div class="ajmint-cartodb-embed" data-embed-link="link-goes-here" data-latlng="33.9436333,-118.4906967" data-zoom="9" style="width: 100%; height: 500px;"></div>
+<div class="CDBE-map" data-embed-link="link-goes-here" data-latlng="33.9436333,-118.4906967" data-zoom="9" style="width: 100%; height: 500px;"></div>
 
 ````
 

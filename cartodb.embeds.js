@@ -6,14 +6,15 @@
 		init: function(){
 
 			// Load the CartoDB.js stylesheet
+			// And add some of our own basic styles
 			var carto_stylesheet = '<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />';
-			document.write(carto_stylesheet+'<style>.ajmint-cartodb-embed{margin-bottom:10px;}.ajmint-map-container,.ajmint-inner-wrapper{width:100%;height:100%;}</style>');
+			document.write(carto_stylesheet+'<style>.CDBE-map{margin-bottom:10px;}.CDBE-map-container,.CDBE-inner-wrapper{width:100%;height:100%;}</style>');
 
 			var id_counter = 0;
 
-			var $outerEls = jQuery('.ajmint-cartodb-embed');
+			var outerEls = document.querySelectorAll('.CDBE-map');
 
-			$outerEls.each(function(){
+			outerEls.each(function(){
 
 
 				var $outerEl = jQuery(this),
@@ -46,9 +47,9 @@
 
 			// Nest everything in an inner wrapper.
 			// This is good if we want to later add anything to our embed that is not part of the map canvas
-			var $innerEl = jQuery('<div class="ajmint-inner-wrapper"></div>').appendTo(this[id].$outerEl);
+			var $innerEl = jQuery('<div class="CDBE-inner-wrapper"></div>').appendTo(this[id].$outerEl);
 
-			var $mapContainer = jQuery('<div class="ajmint-map-container" id="ajmint-map-container-'+id+'"></div>').appendTo($innerEl);
+			var $mapContainer = jQuery('<div class="CDBE-map-container" id="CDBE-map-container-'+id+'"></div>').appendTo($innerEl);
 
 			// Save this selector. This is the main parent we append to
 			this[id].$innerEl = $innerEl;
@@ -62,7 +63,7 @@
 			var that = this;
 			console.log(id, embedLink)
 
-			cartodb.createVis('ajmint-map-container-'+id, embedLink)	
+			cartodb.createVis('CDBE-map-container-'+id, embedLink)	
 				.on('done', function(vis, layers){
 					that.setCartoDbListeners.call(that, id, vis, layers, latlng, zoom);
 				})
