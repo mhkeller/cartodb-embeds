@@ -9,17 +9,96 @@
 	<style>
 		body{
 			margin: 0;
+			font-family: helvetica, sans-serif;
+		}
+		h1{
+			text-align: center;
+		}
+		a{
+			color: #10BAE5;
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		.example-group{
+			width: 100%;
+			margin-bottom: 50px;
+		}
+		.example-text{
+			margin:0 auto;
+			width: 85%;
+			/*background-color: #f0c;*/	
+		}
+		pre{
+			background-color: #F7F7F7;
+			border-radius: 3px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			overflow-x: scroll;
+			overflow-y: hidden;
 		}
 	</style>
 
 </head>
 <body>
 
-	<div class="ajmint-cartodb-embed" data-embed-link="https://aljazeeraamerica.cartodb.com/u/ajammultimedia/api/v2/viz/a94a2fbc-f990-11e4-b53c-0e5e07bb5d8a/viz.json" style="width: 100%; height: 500px;"></div>
-	
-	<div class="ajmint-cartodb-embed" data-embed-link="https://aljazeeraamerica.cartodb.com/u/ajammultimedia/api/v2/viz/a94a2fbc-f990-11e4-b53c-0e5e07bb5d8a/viz.json" data-zoom="14" style="width: 100%; height: 500px;"></div>
+<a href="https://github.com/mhkeller/cartodb-embeds"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+	<h1><a href="http://github.com/mhkeller/cartodb-embeds" target="_blank">CartoDB Embeds</a></h1>
 
-	<div class="ajmint-cartodb-embed" data-embed-link="https://aljazeeraamerica.cartodb.com/u/ajammultimedia/api/v2/viz/a94a2fbc-f990-11e4-b53c-0e5e07bb5d8a/viz.json" data-latlng="33.9436333,-118.4906967" data-zoom="9" style="width: 100%; height: 500px;"></div>
+
+	<div class="example-group">
+
+		<div class="example-text">
+			<h3>No additions</h3>
+			<p>All settings coming from CartoDB Map settings</p>
+			<pre>
+&lt;div class="ajmint-cartodb-embed" 
+	data-embed-link="https://zerocool.cartodb.com/api/v2/viz/5e890af4-23eb-11e5-9d47-0e4fddd5de28/viz.json" 
+	style="width: 100%; height: 500px;"&gt;
+&lt;/div&gt;</pre>
+		</div>
+
+		<div class="ajmint-cartodb-embed" data-embed-link="https://zerocool.cartodb.com/api/v2/viz/5e890af4-23eb-11e5-9d47-0e4fddd5de28/viz.json" style="width: 100%; height: 500px;"></div>
+
+	</div>
+	
+	<div class="example-group">
+	
+		<div class="example-text">
+			<h3>Alternate zoom</h3>
+			<p>Latlng still based on CartoDB Map settings</p>
+			<pre>
+&lt;div class="ajmint-cartodb-embed" 
+	data-embed-link="https://zerocool.cartodb.com/api/v2/viz/5e890af4-23eb-11e5-9d47-0e4fddd5de28/viz.json" 
+	data-zoom=5"&gt;
+	style="width: 100%; height: 500px;"&gt;
+&lt;/div&gt;</pre>
+		</div>
+
+		<div class="ajmint-cartodb-embed" data-embed-link="https://zerocool.cartodb.com/api/v2/viz/5e890af4-23eb-11e5-9d47-0e4fddd5de28/viz.json" data-zoom="5" style="width: 100%; height: 500px;"></div>
+
+	</div>
+
+
+	<div class="example-group">
+	
+		<div class="example-text">
+			<h3>Alternate zoom + latlng</h3>
+			<p>CartoDB view taken over by our settings</p>
+			<pre>
+&lt;div class="ajmint-cartodb-embed" 
+	data-embed-link="https://zerocool.cartodb.com/api/v2/viz/5e890af4-23eb-11e5-9d47-0e4fddd5de28/viz.json" 
+	data-zoom=9"
+	data-latlng="33.9436333,-118.4906967"&gt;
+	style="width: 100%; height: 500px;"&gt;
+&lt;/div&gt;</pre>
+		</div>
+
+	<div class="ajmint-cartodb-embed" data-embed-link="https://zerocool.cartodb.com/api/v2/viz/5e890af4-23eb-11e5-9d47-0e4fddd5de28/viz.json" data-latlng="33.9436333,-118.4906967" data-zoom="9" style="width: 100%; height: 500px;"></div>
+</div>
+
 
 	<!-- Load another version to simulate what the CMS will do -->
 	<script src="../jquery-1.11.1.min.js"></script>
