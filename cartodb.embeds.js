@@ -8,19 +8,17 @@
 			// Load the CartoDB.js stylesheet
 			// And add some of our own basic styles
 			var carto_stylesheet = '<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />';
-			document.write(carto_stylesheet+'<style>.CDBE-map{margin-bottom:10px;}.CDBE-map-container,.CDBE-inner-wrapper{width:100%;height:100%;}</style>');
+			document.write(carto_stylesheet+'<style>.CDBE-embed{margin-bottom:10px;}.CDBE-map-container,.CDBE-inner-wrapper{width:100%;height:100%;}</style>');
 
 			var id_counter = 0;
 
-			var outerEls = document.querySelectorAll('.CDBE-map');
+			var outerEls = document.querySelectorAll('.CDBE-embed');
 
-			outerEls.each(function(){
+			Array.prototype.forEach.call(outerEls, function(outerEl){
 
-
-				var $outerEl = jQuery(this),
-						embed_link = $outerEl.attr('data-embed-link'),
-						zoom = +$outerEl.attr('data-zoom'),
-						latlng_str = $outerEl.attr('data-latlng'),
+				var embed_link = outerEl.getAttribute('data-embed-link'),
+						zoom = +outerEl.getAttribute('data-zoom'),
+						latlng_str = outerEl.getAttribute('data-latlng'),
 						latlng = latlng_str;
 
 				if (latlng_str){
@@ -30,7 +28,7 @@
 				var id = 'mapid_'+id_counter;
 
 				maps[id] = {};
-				maps[id].$outerEl = $outerEl;	
+				maps[id].outerEl = outerEl;	
 
 				// Do our thangs
 				maps.bakeLayout(id);
@@ -47,13 +45,21 @@
 
 			// Nest everything in an inner wrapper.
 			// This is good if we want to later add anything to our embed that is not part of the map canvas
-			var $innerEl = jQuery('<div class="CDBE-inner-wrapper"></div>').appendTo(this[id].$outerEl);
+			var innerEl = document.createElement('div')
+			innerEl.setAttribute('class', 'CDBE-inner-wrapper');
+			// Append the inner wrapper to our outer wrapper
+			this[id].outerEl.appendChild(innerEl);
 
-			var $mapContainer = jQuery('<div class="CDBE-map-container" id="CDBE-map-container-'+id+'"></div>').appendTo($innerEl);
+			// Create a map container
+			var mapContainer = document.createElement('div')
+			mapContainer.setAttribute('class', 'CDBE-map-container');
+			mapContainer.setAttribute('id', 'CDBE-map-container-'+id);
+			// Append that to the inner wrapper
+			innerEl.appendChild(mapContainer);
 
 			// Save this selector. This is the main parent we append to
-			this[id].$innerEl = $innerEl;
-			this[id].$mapContainer = $mapContainer;
+			this[id].innerEl = innerEl;
+			this[id].mapContainer = mapContainer;
 
 			return this;
 
@@ -103,10 +109,7 @@
 
 	};
 
-	// Give the site's version of jQuery control over `$`, we'll use 
-	$.noConflict();
-
+	// Start
 	maps.init();
-
 
 }).call(this);
