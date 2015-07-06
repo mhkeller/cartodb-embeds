@@ -29,9 +29,32 @@ The `dist/` folder contains two files
 
 ````
 
+## Developing
+
+This projects uses bower and gulp, which are [NodeJS](http://nodejs.org) tools. If you don't have them, install with:
+
+````
+npm install bower -g
+npm install gulp -g
+````
+
+Then, in this project folder run
+
+````
+bower install
+npm install
+gulp
+````
+
+#### Other handy things
+
+If you want to repackage the JavaScript as you're working, use the `gulp dev` command, which will watch the project folder and rerun the gulp tasks when it detects changes.
+
+If you're not used to writing Vanilla JavaScript (i.e. not using jQuery), the site [You might not need jQuery](http://youmightnotneedjquery.com/) has a lot of equivalencies. I'm currently setting it to the "Support IE9" level.
+
 ## Future features
 
-Check the Issue Tracker for progress. A few ideas are:
+Check the [Issue Tracker](https://github.com/mhkeller/cartodb-embeds/issues) for progress. A few ideas are:
 
 * Mobile latlng
 * Mobile zoom
