@@ -43,8 +43,9 @@ Then, in this project folder run
 ````
 bower install
 npm install
-gulp
 ````
+
+To package the JavaScript to the `dist/` folder, simply run `gulp`.
 
 #### Other handy things
 
