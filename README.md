@@ -9,8 +9,8 @@ Check out the [example](http://mhkeller.github.io/cartodb-embeds/examples/index.
 
 The `dist/` folder contains two files
 
-* **`cartodb-embeds.js`**: The minified version of just this library. You'll need to load your own CartoDB.js. Note: this library has only been tested with CartoDB.js 3.15.1
-* **`cartodb-embeds.pkgd.min.js`**: The same as above packaged with CartoDB.js 3.15.1.
+* **`cartodb-embeds.js`** The minified version of just this library. You'll need to load your own CartoDB.js. Note: this library has only been tested with CartoDB.js 3.15.1
+* **`cartodb-embeds.pkgd.min.js`** The same as above packaged with CartoDB.js 3.15.1.
 
 ## Example usage
 
