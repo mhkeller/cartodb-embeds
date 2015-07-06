@@ -21,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/mhkeller/cartodb-embeds/issues"
   },
-  "homepage": "https://github.com/mhkeller/cartodb-embeds"
+  "homepage": "https://github.com/mhkeller/cartodb-embeds",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0"
+  }
 }

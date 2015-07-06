@@ -1,5 +1,8 @@
-(function(){
+// @preserve cartodb-embed.js version: 0.1.0
+// @preserve CartoDB.js version: 3.15.2 
+// @preserve github.com/mhkeller/cartodb-embeds
 
+(function(){
 
 	var maps = {
 
