@@ -24,6 +24,9 @@ The `dist/` folder contains two files
 <!-- Custom latlng and zoom -->
 <div class="CDBE-embed" data-embed-link="link-goes-here" data-latlng="33.9436333,-118.4906967" data-zoom="9" style="width: 100%; height: 500px;"></div>
 
+<!-- Custom mobile latlng, mobile zoom and mobile breakpoint -->
+<div class="CDBE-embed" data-embed-link="linke-goes-here" data-latlng="33.9436333,-118.4906967" data-zoom="9" data-mobile-zoom="3" data-mobile-latlng="33.8,-119" data-mobile-breakpoint="500px" style="width: 100%; height: 500px;"></div>
+
 <!-- Include script -->
 <script src="cartodb-embeds.pkgd.min.js"></script>
 

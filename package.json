@@ -4,6 +4,7 @@
   "description": "More flexible embeds for CartoDB.js",
   "scripts": {
     "build": "gulp",
+    "dev": "gulp dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
