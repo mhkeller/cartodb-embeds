@@ -103,8 +103,6 @@
 					initial_lnglat = native_map.getCenter(),
 					initial_zoom = native_map.getZoom()
 
-			console.log('native center', native_map.getCenter())
-
 			var zoom   = opts.zoom   || initial_zoom
 			var latlng = opts.latlng || initial_lnglat
 			var mobile_breakpoint = opts.mobileBreakpoint || 720
@@ -114,10 +112,7 @@
 			if (window_width < opts.mobileBreakpoint) {
 				zoom = opts.mobileZoom || zoom
 				latlng = opts.mobileLatlng || latlng
-				console.log('mobile')
 			}
-
-			console.log(zoom, latlng)
 
 			native_map.setView(latlng, zoom)
 

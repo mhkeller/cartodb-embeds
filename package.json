@@ -1,7 +1,7 @@
 {
   "name": "cartodb-embeds",
   "version": "0.0.1",
-  "description": "More flexible embeds for CartoDB.js",
+  "description": "More flexible embeds for CartoDB.js with custom latlng, zooms and mobile views.",
   "scripts": {
     "build": "gulp",
     "dev": "gulp dev",
