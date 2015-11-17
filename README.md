@@ -3,7 +3,9 @@ CartoDB Embeds
 
 These CartoDB embeds balance all the free things you get when using a CartoDB "Visualization embed" (legends, address search field, tile layer loading spinners), with the ability to customize a zoom and starting lat/lng and a few other ideas in the works.
 
-#### Check out the [example](http://mhkeller.github.io/cartodb-embeds/examples/index.html).
+## Usage
+
+#### Check out the [example](http://mhkeller.github.io/cartodb-embeds/examples/index.html) for all options.
 
 ## Installation
 
